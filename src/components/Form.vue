@@ -16,7 +16,7 @@ import { helpers, required, minLength } from "vuelidate/lib/validators";
 
 import FormGroup from "./FormGroup";
 
-const alpha = helpers.regex('alpha', /^[a-zA-Z\s]*$/);
+const alpha = helpers.regex("alpha", /^[a-zA-Z\s]*$/);
 
 export default {
   components: {
