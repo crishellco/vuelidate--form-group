@@ -1,5 +1,13 @@
+<template>
+  <div>
+    <slot :errors="errors" :invalid="invalid"/>
+    <span v-for="error in errors" class="error">{{ error }}</span>
+  </div>
+</template>
+
+
 <script>
-import {template, templateSettings} from "lodash";
+import { template, templateSettings } from "lodash";
 
 // curly brace syntax
 templateSettings.interpolate = /{{([\s\S]+?)}}/g;
@@ -42,13 +50,6 @@ export default {
     invalid() {
       return this.validations.$dirty && this.validations.$invalid;
     }
-  },
-
-  render() {
-    return this.$scopedSlots.default({
-      errors: this.errors,
-      invalid: this.invalid
-    });
   }
 };
 </script>
