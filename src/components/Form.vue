@@ -49,13 +49,13 @@ export default {
   },
 
   validations: {
+    email: {
+      email,
+      required,
+    },
     name: {
       alpha,
       minLength: minLength(10),
-      required,
-    },
-    email: {
-      email,
       required,
     }
   },
