@@ -39,6 +39,10 @@ export default {
   margin-left: 0.5rem;
 }
 
+.form-group + .form-group {
+  margin-top: 2rem;
+}
+
 input {
   appearance: none;
   background: #f2f2f2;
