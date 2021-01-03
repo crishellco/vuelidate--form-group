@@ -44,6 +44,7 @@ const alpha = helpers.regex("alpha", /^[a-zA-Z\s]*$/);
 export default {
   data() {
     return {
+      email: "",
       name: ""
     };
   },
