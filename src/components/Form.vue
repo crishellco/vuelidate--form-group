@@ -13,6 +13,7 @@
         <span v-for="error in errors" class="error">{{ error }}</span>
       </div>
     </form-group>
+    
     <form-group :validations="$v.email" class="form-group">
       <div slot-scope="{ errors, invalid }">
         <div>
