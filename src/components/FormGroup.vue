@@ -7,7 +7,7 @@ templateSettings.interpolate = /{{([\s\S]+?)}}/g;
 // this would most likely be in a language file
 const TEMPLATES_MAP = {
   alpha: "Alphanumeric characters only.",
-  email: "Must be a valid email address",
+  email: "Must be a valid email address.",
   minLength: "Must have a length no less than {{min}}.",
   required: "Required field."
 };
